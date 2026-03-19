@@ -1,39 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Meta tags for character encoding and responsive design -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raphael Kamau - Portfolio</title>
-    <!-- Link to external CSS stylesheet for styling -->
-    <link rel="stylesheet" href="styles.css">
-    
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Raphael Kamau — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Raphael Kamau — Full-Stack Developer focused on predictive systems, geospatial tools, and TypeScript-driven architectures." />
 </head>
 <body>
-    <main>
-        <!-- HERO SECTION - Introduction and main landing area -->
-        <section class="hero" id="home">
-        <header>
-            <!-- Navigation menu for page navigation -->
-            <div class="nav-bar">
-                <nav class="navbar">
-                    <ul>
-                        <!-- Navigation links to different sections -->
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!-- Hero section with welcome text and social links -->
-            <div class="hero-text">
-                <h1>Welcome to my page.</h1>
-                <p>Hello! I'm Raphael, an aspiring Frontend Web Developer.</p>
-                <!-- Social media links -->
-                <p>
-                    <a href="https://instagram.com/ra_hvic" title="instagram">Instagram |</a>
-                    <a href="https://linkedin.com/in/raphael-kamau-391738310" title="linkedin">LinkedIn |</a>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <header>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="hero-text">
+        <h1>Full-Stack Developer | Building Predictive &amp; Scalable Solutions</h1>
+        <p><strong>Raphael Kamau Kamunyu</strong> — I build data-driven web apps that combine predictive logic, geospatial mapping, and type-safe full-stack architectures.</p>
+        <p class="social">
+          <a href="https://instagram.com/ra_hvic" title="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a> |
+          <a href="https://linkedin.com/in/raphael-kamau-391738310" title="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+          <a href="https://github.com/Raphael-Kamau" title="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+        <a class="cta" href="#projects">See My Work</a>
+        <hr />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <hr />
+        <p>
+          Hello and welcome to my portfolio. I'm <strong>Raphael Kamau Kamunyu</strong>, a Computer Science student at Mount Kenya University and a Full-Stack Developer focused on building
+          predictive, reliable, and user-centered web applications.
+        </p>
+        <p>
+          I specialize in TypeScript-driven full-stack architectures (MERN), integrating Python-based predictive logic and geospatial tools to deliver actionable insights.
+          My work spans predictive energy monitoring, interactive mapping for environmental impact, and component-driven developer tooling.
+        </p>
+        <p>
+          I enjoy turning data into clear visual stories and building robust systems that scale. Explore my projects below or download my CV for a detailed overview.
+        </p>
+        <p><a href="My_Resume.pdf" download="kamunyu_raphael_kamauCV.pdf" class="button">Download CV</a></p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+      <h2>Skills & Technologies</h2>
+      <hr />
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <p><strong>TypeScript</strong>; JavaScript; Python (Basics); C; SQL</p>
+        </div>
+        <div class="skill-card">
+          <h3>Frameworks & Libraries</h3>
+          <p>React.js; Node.js; Express.js; Leaflet.js; Bootstrap; Tailwind CSS</p>
+        </div>
+        <div class="skill-card">
+          <h3>Databases</h3>
+          <p>MongoDB; MySQL</p>
+        </div>
+        <div class="skill-card">
+          <h3>Tools & Concepts</h3>
+          <p>MERN Stack; Git; GitHub; Render; JWT Authentication; Type-Safe Architectures; AI Foundations; Machine Learning (In Progress)</p>
+        </div>
+        <div class="skill-card">
+          <h3>Soft Skills</h3>
+          <p>Problem Solving; Teamwork; Effective Communication; Adaptability; Continuous Learning</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="education">
+      <h2>Education & Certifications</h2>
+      <hr />
+      <div class="education-item">
+        <h3>Bachelor of Science in Computer Science</h3>
+        <p><strong>Mount Kenya University</strong> — Thika, Kenya</p>
+        <p><strong>Expected Graduation:</strong> August 2027</p>
+      </div>
+
+      <div class="education-item">
+        <h3>Professional Certificate in Full Stack Software Development</h3>
+        <p><strong>Power Learn Project (PLP) Academy</strong> — Remote</p>
+        <p><strong>July 2025 – Nov 2025</strong></p>
+      </div>
+
+      <div class="education-item">
+        <h3>Certifications</h3>
+        <p><strong>UniAthena:</strong> Professional Certificate in Basics of Python (Feb 2026)</p>
+        <p><strong>Basics of AI:</strong> Ongoing</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <h2>Selected Projects</h2>
+      <hr />
+
+      <article class="project">
+        <h3>Power Cast — Energy Prediction</h3>
+        <p>
+          <strong>Overview:</strong> A predictive energy monitoring web application that visualizes consumption trends and forecasts future demand by combining Python predictive models with a MERN frontend.
+        </p>
+        <p><strong>Technologies:</strong> React, Node.js, Python, TypeScript, MongoDB</p>
+        <p class="project-links">
+          <a href="#" class="button" aria-disabled="true">Live Demo (coming)</a>
+          <a href="https://github.com/Raphael-Kamau" target="_blank" rel="noopener noreferrer" class="button">GitHub Repo</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>UI-Forge — Component Library Platform</h3>
+        <p>
+          <strong>Overview:</strong> A developer-focused component library platform built with TypeScript to ensure strict type safety. Includes RESTful APIs and secure JWT authentication for user-contributed UI elements.
+        </p>
+        <p><strong>Technologies:</strong> MERN Stack, TypeScript, Express, MongoDB</p>
+        <p class="project-links">
+          <a href="https://github.com/Raphael-Kamau" target="_blank" rel="noopener noreferrer" class="button">GitHub Repo</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>Regen Mapper — Geospatial Reforestation Tracker</h3>
+        <p>
+          <strong>Overview:</strong> An interactive geospatial tool for tracking reforestation efforts, built with mapping libraries to visualize planting progress and environmental impact.
+        </p>
+        <p><strong>Technologies:</strong> React, Leaflet.js, TypeScript</p>
+        <p class="project-links">
+          <a href="https://github.com/Raphael-Kamau" target="_blank" rel="noopener noreferrer" class="button">GitHub Repo</a>
+        </p>
+      </article>
+
+      <p class="more-projects">Explore more on my <a href="https://github.com/Raphael-Kamau" target="_blank" rel="noopener noreferrer">GitHub Profile</a>.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <h2>Get In Touch</h2>
+      <hr />
+      <p>I'm open to collaborations, freelance work, and research opportunities. Let's build something meaningful.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p><a href="mailto:raphaelkamaukamunyu@gmail.com?subject=Inquiry from Portfolio" class="button">Send Email</a></p>
+        </div>
+
+        <div class="contact-card">
+          <h3>Professional Profiles</h3>
+          <p><a href="https://linkedin.com/in/raphael-kamau-391738310" target="_blank" rel="noopener noreferrer" class="button">LinkedIn</a></p>
+          <p><a href="https://github.com/Raphael-Kamau" target="_blank" rel="noopener noreferrer" class="button">GitHub</a></p>
+        </div>
+      </div>
+
+      <p class="small-text">I look forward to connecting!</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>&copy; <span id="year">2026</span> Raphael Kamau Kamunyu. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script>
+    // Set current year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
                     <a href="https://github.com/Raphael-Kamau" title="github">Github</a>
                 </p>
                 <hr>
