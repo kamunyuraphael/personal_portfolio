@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kamunyu Raphael — Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Raphael Kamau — Full-Stack Developer focused on predictive systems, geospatial tools, and TypeScript-driven architectures." />
+  <meta name="description" content="Kamunyu Raphael — Full-Stack Developer focused on ceating real world solutions." />
 </head>
 <body>
   <main>
@@ -15,8 +15,8 @@
         <div class="nav-bar">
           <div class="nav-container">
             <div class="nav-profile">
-              <img src="profile.jpg" alt="Raphael Kamau profile picture" />
-              <span class="name">Raphael Kamau</span>
+              <img src="my_image.jpg" alt="Raphael Kamau profile picture" />
+              <span class="name">Kamunyu Raphael</span>
             </div>
 
             <nav class="nav-links" aria-label="Primary">
@@ -56,12 +56,12 @@
 
 
       <div class="hero-text">
-        <h1>Full-Stack Developer | Building Predictive &amp; Scalable Solutions</h1>
-        <p><strong>Raphael Kamau Kamunyu</strong> — I build data-driven web apps that combine predictive logic, geospatial mapping, and type-safe full-stack architectures.</p>
+        <h1>Full-Stack Developer | Building Comprehensive &amp; Scalable Solutions</h1>
+        <p><strong>Raphael Kamau Kamunyu</strong> — A developer focused on filling the gaps that exists in our societies using available technology.</p>
         <p class="social">
           <a href="https://instagram.com/ra_hvic" title="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a> |
-          <a href="https://linkedin.com/in/raphael-kamau-391738310" title="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-          <a href="https://github.com/Raphael-Kamau" title="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/raphael-kamau" title="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+          <a href="https://github.com/kamunyuraphael" title="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
         </p>
         <a class="cta" href="#projects">See My Work</a>
         <hr />
@@ -75,10 +75,10 @@
         <hr />
         <p>
           Hello and welcome to my portfolio. I'm <strong>Raphael Kamau Kamunyu</strong>, a Computer Science student at Mount Kenya University and a Full-Stack Developer focused on building
-          predictive, reliable, and user-centered web applications.
+          bridges that help us go beyond solving problems to making our daily lives better and efficient.
         </p>
         <p>
-          I specialize in TypeScript-driven full-stack architectures (MERN), integrating Python-based predictive logic and geospatial tools to deliver actionable insights.
+          I specialize in TypeScript-driven full-stack architectures (MERN), integrating Python-based knowledge and machine learning technology to deliver solutions to different fields such as agriculture, hospitality, educationn and entertainment.
           My work spans predictive energy monitoring, interactive mapping for environmental impact, and component-driven developer tooling.
         </p>
         <p>
@@ -128,13 +128,14 @@
 
       <div class="education-item">
         <h3>Professional Certificate in Full Stack Software Development</h3>
-        <p><strong>Power Learn Project (PLP) Academy</strong> — Remote</p>
-        <p><strong>July 2025 – Nov 2025</strong></p>
+        <p><strong>Power Learn Project Africa (PLP) Academy</strong> — Remote</p>
+        <p><strong>July 2025 – October 2025</strong></p>
       </div>
 
       <div class="education-item">
         <h3>Certifications</h3>
         <p><strong>UniAthena:</strong> Professional Certificate in Basics of Python (Feb 2026)</p>
+        <p><strong>UniAthena:</strong> Professional Certificate in Basics of Machine Learning (Feb 2026)</p>
         <p><strong>Basics of AI:</strong> Ongoing</p>
       </div>
     </section>
@@ -163,7 +164,7 @@
         </p>
         <p><strong>Technologies:</strong> MERN Stack, TypeScript, Express, MongoDB</p>
         <p class="project-links">
-          <a href="https://github.com/Raphael-Kamau" target="_blank" rel="noopener noreferrer" class="button">GitHub Repo</a>
+          <a href="https://github.com/Raphael-Kamau/ui-forge" target="_blank" rel="noopener noreferrer" class="button">GitHub Repo</a>
         </p>
       </article>
 
@@ -174,7 +175,7 @@
         </p>
         <p><strong>Technologies:</strong> React, Leaflet.js, TypeScript</p>
         <p class="project-links">
-          <a href="https://github.com/Raphael-Kamau" target="_blank" rel="noopener noreferrer" class="button">GitHub Repo</a>
+          <a href="https://github.com/Raphael-Kamau/regen-mapper" target="_blank" rel="noopener noreferrer" class="button">GitHub Repo</a>
         </p>
       </article>
 
@@ -195,8 +196,8 @@
 
         <div class="contact-card">
           <h3>Professional Profiles</h3>
-          <p><a href="https://linkedin.com/in/raphael-kamau-391738310" target="_blank" rel="noopener noreferrer" class="button">LinkedIn</a></p>
-          <p><a href="https://github.com/Raphael-Kamau" target="_blank" rel="noopener noreferrer" class="button">GitHub</a></p>
+          <p><a href="https://linkedin.com/in/raphael-kamau" target="_blank" rel="noopener noreferrer" class="button">LinkedIn</a></p>
+          <p><a href="https://github.com/kamunyuraphael" target="_blank" rel="noopener noreferrer" class="button">GitHub</a></p>
         </div>
       </div>
 
@@ -212,242 +213,32 @@
   <script>
     // Set current year dynamically
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Navigation menu
+    (function () {
+      const toggle = document.querySelector('.nav-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const navLinks = document.querySelector('.nav-links');
+
+      if (!toggle || !mobileMenu) return;
+
+      toggle.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.toggle('mobile-menu--open');
+        toggle.classList.toggle('active', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        mobileMenu.setAttribute('aria-hidden', String(!isOpen));
+      });
+
+      // Close mobile menu when a link is clicked
+      mobileMenu.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') {
+          mobileMenu.classList.remove('mobile-menu--open');
+          toggle.classList.remove('active');
+          toggle.setAttribute('aria-expanded', 'false');
+          mobileMenu.setAttribute('aria-hidden', 'true');
+        }
+      });
+    })();
   </script>
-</body>
-</html>
-                    <a href="https://github.com/Raphael-Kamau" title="github">Github</a>
-                </p>
-                <hr>
-            </div>
-        </section>
-
-        <!-- ABOUT SECTION - Personal background and professional summary -->
-        <section class="about" id="about">
-            <div class="about">
-                <!-- About section providing details about skills and background -->
-                <div class="about-text">
-                    <h2 class="h2-about">About Me</h2>
-                    <hr>
-                    <!-- Introduction paragraph -->
-                    <p>Hello and welcome to my portfolio! I'm Raphael Kamau Kamunyu, a dedicated Computer Science student at Mount Kenya University in Thika, Kenya.
-                        My journey into technology is fueled by a profound passion for Frontend Web Development and a drive to create impactful, 
-                        user-centric digital experience.
-                    </p>
-                    <!-- Current learning and technical skills -->
-                    <p>Currently i'm enhancing my practical skills and theoretical knowledge through the intensive Power Learn Project (PLP)
-                        Software Development program, with a strong focus on building robust and intuitive web solutions. I'm proficient in 
-                        foundational web technologies like HTML, CSS, JavaScript, SQL, PHP, and constantly exploring new tools to expand my capabilities.
-                    </p>
-                    <!-- Professional interests and goals -->
-                    <p>
-                        My professional interest lie leveraging technology to solve real-world problems, making services more accessible, and contributing
-                        to a safer and more efficient world. I believe in the power of code to innovate and improve lives.
-                    </p>
-                    <!-- Call to action - links to other sections -->
-                    <p>
-                        You can explore my academic journey and download my CV in the <a href="#educational-background">Educational Background</a> section, 
-                        and see my passion in action by visiting my <a href="https://github.com/Raphael-Kamau">Projects</a>. I'm exited about what the future holds 
-                        in the tech space!
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- SKILLS SECTION - Technical and soft skills showcase -->
-        <section class="skills">
-            <div class="skills">
-                    <h2 class="h2-skills">My Skills and Technologies</h2>
-                    <hr>
-                    <!-- Core programming languages -->
-                    <div class="skills-category">
-                        <h3>Core Programming Languages</h3>
-                        <ul>
-                            <li>Python</li>                                
-                            <li>C</li>
-                        </ul>
-                    </div>
-                    <!-- Frontend development technologies -->
-                    <div class="skills-category">
-                        <h3>Frontend Development</h3>
-                        <ul>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>PHP</li>
-                            <li>React.Js</li>
-                            <li>Responsive Design</li>
-                        </ul>
-                    </div>
-                    <!-- Backend and database technologies -->
-                    <div class="skills-category">
-                        <h3>Backend and Database</h3>
-                        <ul>
-                            <li>SQL</li>
-                        </ul>
-                    </div>
-                    <!-- Development tools and version control -->
-                    <div class="skills-category">
-                        <h3>Tools and version Control</h3>
-                        <ul>
-                            <li>Git</li>
-                            <li>GitHub</li>
-                            <li>VS Code</li>
-                        </ul>
-                    </div>
-                    <!-- Professional soft skills -->
-                    <div class="skills-category">
-                        <h3>Soft Skills</h3>
-                        <ul>
-                            <li>Problem Solving</li>
-                            <li>Teamwork and Collaboration</li>
-                            <li>Effective Communication</li>
-                            <li>Adaptability</li>
-                            <li>Continuous Learning</li>
-                        </ul>
-                    </div>
-            </div>
-        </section>
-
-        <!-- EDUCATION SECTION - Academic qualifications and certifications -->
-        <section class="education" id="educational-background">
-            <h2>Educational Background</h2>
-            <hr>
-            <!-- University education -->
-            <div class="aducation-item">
-                <h3>Bachelor of Science in Computer Science</h3>
-                <p><strong>Mount Kenya University</strong></p>
-                <p>Expected Graduation: August 2027</p>
-            </div>
-            <!-- Professional development program -->
-            <div class="educaiton-item">
-                <h3>Software Development Program</h3>
-                <p><strong>Power Learn Project (PLP) Academy</strong> | Online/Kenya</p>
-                <p>July 2025 - December 2025</p>
-                <p>
-                    An intensive program focusing on practical software development skills, including foundational web technologies,
-                    version control, and project based learning.
-                </p>
-            </div>
-            <!-- CV download section -->
-            <div class="cv-download">
-                <p>
-                    For a more detailed overview of my qualifications and experience, please
-                    <a href="My_Resume.pdf" download="kamunyu_raphael_kamauCV.pdf">download my full CV</a>.
-                </p>
-            </div>
-        </section>
-
-        <!-- INTERESTS SECTION - Professional focus areas and specializations -->
-        <section class="interests">
-            <h2>My Professional Interests</h2>
-            <hr>
-            <!-- Specialized interest areas in tech -->
-            <p>
-                <strong>Predictive Systems & Data Visualization:</strong> I am deeply invested in bridging the gap between raw data and actionable insights. My work on Power Cast demonstrates my ability to integrate Python-based predictive logic with modern MERN frontends to visualize complex consumption trends and forecast future demand.
-                <strong>Geospatial Engineering & Sustainability:</strong> Leveraging tools like Leaflet.js, I am passionate about building software that addresses environmental challenges. My project, Regen Mapper, reflects my interest in developing interactive geospatial tools for reforestation tracking and real-world impact.
-                <strong>Type-Safe Full-Stack Architecture:</strong> I prioritize building robust, enterprise-grade applications using TypeScript to ensure strict type safety and reliability. From designing RESTful APIs to implementing secure JWT authentication in platforms like UI-Forge, I focus on creating scalable and secure software ecosystems.
-                <strong>Advancing AI & Machine Learning:</strong> With foundational certifications in Python and ongoing studies in AI/ML, I am actively exploring how to embed intelligence into web applications. My goal is to transition from traditional full-stack development to building AI-augmented solutions that enhance user efficiency.
-            </p>
-            <!-- Additional interest areas -->
-            <ul>
-                <li>
-                    <strong>Creating intuitive user Interfaces (UI/UX):</strong> I believe that well-designed interfaces are key to making technology
-                    accessible and enjoyable for everyone.
-                </li>
-                <li>
-                    <strong>Exploring new Programming Paradigms:</strong> I have a strong drive for continuous learning and am eager to delve into different 
-                    approaches to software development.
-                </li>
-                <li>
-                    <strong>Building Robust solutions:</strong> My ultimate goal is to apply my skills to develop impactful solutions that enhance efficiency
-                    , safety and convenience in daily life.
-                </li>
-            </ul>
-            <!-- Career aspiration -->
-            <p>Looking ahead, I aspire to become a highly skilled Full-Stack Developer, capable of contributing to all layers of a web application.</p>
-        </section>
-
-        <!-- PROJECTS SECTION - Showcase of completed projects -->
-        <section class="projects">
-            <h2>My Projects</h2>  
-            <hr>
-                <!-- Project 1: Music Dashboard -->
-                <div class="project-item">
-                <h3>Simple Music Dashboard</h3>
-                <p>A simple web based application designed to play audio music.</p>
-                <p class="project-tech"><strong>Technologies:</strong> HTML, CSS, and JavaScript</p>
-                <!-- Links to live demo and GitHub repository -->
-                <div class="project-link">
-                    <a href="https://raphael-kamau.github.io/music_dashboard/" target="_blank" rel="noopener noreferrer" class="button">Live Demo</a>
-                    <a href="https://github.com/Raphael-Kamau/music_dashboard" target="_blank" rel="noopener noreferrer" class="button">GitHub Repo</a>
-                </div>
-            </div>
-            <!-- Project 2: Game Engine -->
-            <div class="project-item">
-                <h3>Game Engine (Car Game)</h3>
-                <p>A foundational game engine built for a simple car game, ideal for beginner programmers to help understand game development concepts.</p>
-                <p class="project-tech"><strong>Technologies: </strong>Python</p>
-                <!-- Links to live demo and GitHub repository -->
-                <div class="project-link">
-                    <a href="https://raphael-kamau.github.io/game_engine/" target="_blank" rel="noopener noreferrer" class="button">Live Demo</a>
-                    <a href="https://github.com/Raphael-Kamau/game_engine" target="_blank" rel="noopener noreferrer" class="button">GitHub Repo</a>
-                </div>
-            </div>
-            <!-- Project 3: Farm Website -->
-            <div class="project-item">
-                <h3>A Farm Website</h3>
-                <p class="project-tech"><strong>Technologies: </strong>HTML, CSS, and JavaScript</p>
-                <!-- Links to live demo and GitHub repository -->
-                <div class="project-link">
-                    <a href="https://raphael-kamau.github.io/farm/" target="_blank" rel="noopener noreferrer" class="button">Live Demo</a>
-                    <a href="https://github.com/Raphael-Kamau/farm" target="_blank" rel="noopener noreferrer" class="button">GitHub Repo</a>
-                </div>
-            </div>
-            <!-- Link to full GitHub profile for more projects -->
-            <p class="more-projects">
-                Explore more of my work on my <a href="https://github.com/Raphael-Kamau" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
-            </p>
-        </section>
-
-        <!-- CONTACT SECTION - Ways to get in touch -->
-        <section class="contact" id="contact">
-            <h2>Get In Touch</h2>
-            <hr>
-            <p>
-                I'm always open to new opportunities, collaborations, and conversations about technology. Feel free to reach out!
-            </p>
-            <!-- Contact options -->
-            <div class="contact">
-                <!-- Email contact option -->
-                <div class="contact-item">
-                    <h3>Email:</h3>
-                    <p>You can reach me via email.</p>
-                    <p><a href="mailto:rahvickam@gmail.com?subject=Inquiring from Portfolio Website" class="button">Send Email</a></p>
-                </div>
-                <!-- Professional networks -->
-                <div class="contact-item">
-                    <h3>Connect Online</h3>
-                    <p>You can also reach me on my professional networks.</p>
-                    <!-- LinkedIn profile link -->
-                    <p>
-                        <a href="https://linkedin.com/in/raphael-kamau-391738310" title="linkedin" target="_blank" rel="noopener noreferrer" class="button">LinkedIn Profile</a>
-                    </p>
-                    <!-- GitHub profile link -->
-                    <p>
-                        <a href="https://github.com/Raphael-Kamau" title="github" target="_blank" rel="noopener noreferrer" class="button">GitHub Profile</a>
-                    </p>
-                </div>
-            </div>
-            <p class="small-text">I look forward to connecting!</p>
-        </section>
-
-        <!-- FOOTER SECTION - Copyright and closing information -->
-        <section class="footer">
-            <footer>
-                <!-- Copyright information -->
-                <p>&copy; 2025 Raphael Kamau Kamunyu. All rights reserved.</p>
-            </footer>
-        </section>
-         </main>
 </body>
 </html>
