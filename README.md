@@ -139,8 +139,9 @@ Frontend Web Developer passionate about creating user-centric digital experience
 Contact:
 
 Email: rahvickam@gmail.com
-LinkedIn: raphael-kamau-391738310
-GitHub: Raphael-Kamau
+LinkedIn: [(https:/?linkedin.com/in/raphael-kamau-kamunyu)]
+GitHub: [(https://github.com/kamunyuraphael)]
+
 ### 📄 License
 This project is open source under the MIT License. See LICENSE file for details.
 
