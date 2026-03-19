@@ -6,7 +6,7 @@ This website is designed to showcase my background, skills, projects, and profes
 ## 🌐 Live Demo
 
 You can view the live version of this portfolio here:  
-[https://raphael-kamau.github.io/personal_portfolio/](https://raphael-kamau.github.io/personal_portfolio/)
+[https://kamunyuraphael.netlify.app/](https://kamunyuraphael.netlify.app/)
 
 ## 📋 Table of Contents
 
@@ -55,7 +55,7 @@ Some of my featured projects:
 - **[A Farm Website](https://raphael-kamau.github.io/farm/)**  
   A demo farm website using HTML, CSS, and JavaScript.
 
-Find more of my work on my [GitHub profile](https://github.com/Raphael-Kamau).
+Find more of my work on my [GitHub profile](https://github.com/kamunyuraphael).
 
 ## 🚦 Getting Started
 
