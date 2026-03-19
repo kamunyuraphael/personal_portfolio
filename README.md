@@ -1,29 +1,147 @@
-# README.md
+# 🎨 Raphael Kamau - Personal Portfolio Website
 
-## Table of Contents
-- [Code Structure](#code-structure)
-- [Recent Updates](#recent-updates)
+Welcome to my personal portfolio website! This is a clean, professional, and fully responsive portfolio that showcases my skills, projects, education, and professional interests as an aspiring **Frontend Web Developer**.
 
-## Code Structure
+**🌐 Live Demo**: [https://personal-portfolio-livid-pi-43.vercel.app/](https://personal-portfolio-livid-pi-43.vercel.app/)
 
-The HTML is organized into the following eight sections:
-1. **Hero**: This section showcases a hero image and a brief introduction.
-2. **About**: A description of who I am and my professional background.
-3. **Skills**: A list of my current technical skills.
-4. **Education**: Details about my academic qualifications.
-5. **Professional Interests**: My areas of interest in the professional world.
-6. **Projects**: Information on projects I have worked on.
-7. **Contact**: How to get in touch with me.
-8. **Footer**: Additional links and copyright information.
+---
 
-### Benefits of Changes
-- Improved page title helps with SEO and branding.
-- Comprehensive HTML comments make the code easier to understand.
-- Better organization improves maintainability and readability.
+## 📑 Table of Contents
 
-## Recent Updates
-- **Page Title Change**: Changed to "Raphael Kamau - Portfolio" ✔️
-- **Comprehensive HTML Comments Added** ✔️
-- **Better Code Organization** ✔️
+- [Overview](#overview)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Sections Included](#sections-included)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [How to Use](#how-to-use)
+- [Code Documentation](#code-documentation)
+- [About Me](#about-me)
+- [Contact](#contact)
+- [License](#license)
 
-These updates were implemented on **March 19, 2026**.
+---
+
+## 📌 Overview
+
+This portfolio website provides a comprehensive overview of my professional journey, technical skills, and project portfolio. The website features:
+
+- **Clean & Modern Design** - Minimalist approach with excellent user experience
+- **Fully Responsive** - Works seamlessly across all devices
+- **Well-Documented Code** - Comprehensive HTML comments for easy maintenance
+- **SEO Optimized** - Proper meta tags and semantic HTML structure
+- **Single Page Application** - Smooth navigation with anchor links
+
+---
+
+## ✨ Features
+
+- ✅ **Responsive Design** - Fully optimized for desktop, tablet, and mobile
+- ✅ **Navigation Menu** - Easy-to-use navigation with smooth anchor links
+- ✅ **Hero Section** - Eye-catching introduction with social media links
+- ✅ **About Me** - Detailed personal background and professional journey
+- ✅ **Skills Showcase** - Comprehensive list organized by category
+- ✅ **Education** - Academic qualifications with CV download
+- ✅ **Professional Interests** - Specialized focus areas including AI/ML and geospatial engineering
+- ✅ **Projects Portfolio** - Showcase of completed projects with live demos and GitHub links
+- ✅ **Contact Section** - Multiple ways to connect (email, LinkedIn, GitHub)
+- ✅ **Well-Commented Code** - Professional-level HTML comments throughout
+- ✅ **SEO Optimized** - Improved page title and semantic HTML structure
+
+---
+
+## 📁 Project Structure
+
+personal_portfolio/ │ ├── index.html # Main HTML file with all content and comments 
+                      ├── styles.css # Stylesheet for responsive design 
+                      ├── README.md # Documentation 
+                      ├── LICENSE # MIT License 
+                      │ └── assets/ # Optional folder for images/resources 
+
+Code
+
+---
+
+## �� Sections Included
+
+### 1. **Hero Section** (Home)
+Navigation menu with links to all sections, welcome message, and social media links.
+
+### 2. **About Section**
+Personal introduction, education background, professional goals, and quick navigation links.
+
+### 3. **Skills Section**
+Organized into five categories:
+- Programming Languages (Python, C)
+- Frontend Development (HTML5, CSS3, JavaScript, React.js, etc.)
+- Backend & Database (SQL)
+- Development Tools (Git, GitHub, VS Code)
+- Soft Skills (Problem Solving, Teamwork, Communication, etc.)
+
+### 4. **Education Section**
+- University Degree: Bachelor of Science in Computer Science
+- Professional Certification: Power Learn Project (PLP) Software Development Program
+- CV Download Link
+
+### 5. **Professional Interests Section**
+Specialized areas including:
+- Predictive Systems & Data Visualization
+- Geospatial Engineering & Sustainability
+- Type-Safe Full-Stack Architecture
+- Advancing AI & Machine Learning
+
+### 6. **Projects Section**
+Three featured projects with live demos and GitHub links
+
+### 7. **Contact Section**
+Email, LinkedIn, and GitHub contact options
+
+### 8. **Footer Section**
+Copyright information
+
+---
+
+## 🛠️ Technologies Used
+
+- **HTML5** - Semantic markup and structure
+- **CSS3** - Styling, layout, and responsive design
+- **JavaScript** - Ready for future interactivity
+- **Git & GitHub** - Version control and hosting
+- **Netlify** - Live deployment
+
+**No Dependencies Required** ✅
+
+---
+
+## 🚀 Getting Started
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/kamunyuraphael/personal_portfolio.git
+
+# Navigate to project
+cd personal_portfolio
+
+# Open in browser
+open index.html
+```
+
+### 💡 How to Use
+Navigate - Use the menu to jump between sections
+Explore Projects - Click "Live Demo" to see projects
+Get in Touch - Use Contact section to reach out
+### 👤 About Me
+Frontend Web Developer passionate about creating user-centric digital experiences.
+
+Contact:
+
+Email: rahvickam@gmail.com
+LinkedIn: raphael-kamau-391738310
+GitHub: Raphael-Kamau
+### 📄 License
+This project is open source under the MIT License. See LICENSE file for details.
+
+Thank you for visiting! 🚀
