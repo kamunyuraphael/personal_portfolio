@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Raphael Kamau — Portfolio</title>
+  <title>Kamunyu Raphael — Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
   <meta name="description" content="Raphael Kamau — Full-Stack Developer focused on predictive systems, geospatial tools, and TypeScript-driven architectures." />
 </head>
@@ -12,17 +12,48 @@
     <!-- HERO -->
     <section id="home" class="hero">
       <header>
-        <nav class="navbar">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+        <div class="nav-bar">
+          <div class="nav-container">
+            <div class="nav-profile">
+              <img src="profile.jpg" alt="Raphael Kamau profile picture" />
+              <span class="name">Raphael Kamau</span>
+            </div>
+
+            <nav class="nav-links" aria-label="Primary">
+              <div class="navbar">
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+
+            <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" title="Toggle navigation">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+          </div>
+
+          <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+            <nav class="navbar" aria-label="Mobile Primary">
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+      </div>
+    </header>
+
 
       <div class="hero-text">
         <h1>Full-Stack Developer | Building Predictive &amp; Scalable Solutions</h1>
