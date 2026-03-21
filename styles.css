@@ -174,15 +174,34 @@ hr {
 }
 
 /* Desktop nav links wrapper */
-.nav-links {
+.nav-links ul {
+    list-style: none;
     display: flex;
+    gap: 1.5rem;
     align-items: center;
-    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: var(--color-text-light);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.25s ease;
+    padding: 0.5rem;
+}
+
+.nav-links a:hover {
+    color: var(--color-accent-highlight);
+    text-shadow: 0 0 8px rgba(99, 218, 252, 0.4);
 }
 
 /* Keep existing navbar link styles but scoped */
 .navbar {
-    display: block;
+    /* display: block; */
+    background: rgba(7, 17, 29, 0.85); /* Increased opacity for readability */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* Safari support */    
 }
 
 .navbar ul {
@@ -272,18 +291,34 @@ hr {
     }
 
     .nav-toggle {
-        display: inline-flex;
+        display: block;
         align-items: center;
         justify-content: center;
     }
 
     /* Mobile menu visible when .mobile-menu--open is added */
     .mobile-menu {
-        display: none;
+        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--color-card-background);
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--color-border-subtle);
     }
 
     .mobile-menu.mobile-menu--open {
         display: block;
+    }
+
+    .mobile-menu ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    .mobile-menu li {
+        margin: 1rem 0;
     }
 
     /* Make profile image slightly smaller on small screens */
@@ -293,7 +328,7 @@ hr {
     }
 }
 
-/* Optional: small-screen expanded hamburger animation when active */
+/* Small-screen expanded hamburger animation when active 
 .nav-toggle.active .bar:nth-child(1) {
     transform: translateY(6px) rotate(45deg);
 }
@@ -303,6 +338,7 @@ hr {
 .nav-toggle.active .bar:nth-child(3) {
     transform: translateY(-6px) rotate(-45deg);
 }
+*/
 
 /* Hero Text */
 .hero-text {
