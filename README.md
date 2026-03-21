@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! This is a clean, professional, and fully responsive portfolio that showcases my skills, projects, education, and professional interests as an aspiring **Frontend Web Developer**.
 
-**🌐 Live Demo**: [https://personal-portfolio-livid-pi-43.vercel.app/](https://personal-portfolio-livid-pi-43.vercel.app/)
+**🌐 Live Demo**: [https://personal-portfolio-blush-pi-66.vercel.app/](https://personal-portfolio-blush-pi-66.vercel.app/))
 
 ---
 
