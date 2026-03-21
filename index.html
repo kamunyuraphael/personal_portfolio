@@ -12,22 +12,26 @@
     <!-- HERO -->
     <section id="home" class="hero">
       <header>
+        <!-- Navigation bar with profile and responsive mobile menu -->
         <div class="nav-bar">
           <div class="nav-container">
             <div class="nav-profile">
-              <img src="my_image.jpg" alt="Raphael Kamau profile picture" />
-              <span class="name">Kamunyu Raphael</span>
+              <!-- Replace profile.jpg with your image file -->
+              <img src="profile.jpg" alt="Raphael Kamau profile picture" />
+              <span class="name">Raphael Kamau</span>
             </div>
 
-            <nav class="nav-links" aria-label="Primary">
-              <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
+            <nav class="nav-links" aria-label="Primary navigation">
+              <div class="navbar">
+                <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
             </nav>
 
             <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" title="Toggle navigation">
@@ -38,7 +42,7 @@
           </div>
 
           <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
-            <nav class="navbar" aria-label="Mobile Primary">
+            <nav class="navbar" aria-label="Mobile primary navigation">
               <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -49,19 +53,18 @@
               </ul>
             </nav>
           </div>
-      </div>
-    </header>
-
+        </div>
+      </header>
 
       <div class="hero-text">
         <h1>Full-Stack Developer | Building Comprehensive &amp; Scalable Solutions</h1>
-        <p><strong>Raphael Kamau Kamunyu</strong> — A developer focused on filling the gaps that exists in our societies using available technology.</p>
+        <p><strong>Kamunyu Raphael Kamau</strong> — A developer focused on filling the gaps that exists in our societies using available technology.</p>
         <p class="social">
           <a href="https://instagram.com/ra_hvic" title="Instagram" target="_blank" rel="noopener noreferrer">Instagram</a> |
           <a href="https://linkedin.com/in/raphael-kamau-kamunyu" title="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-          <a href="https://github.com/kamunyuraphael" title="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://github.com/Raphael-Kamau" title="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
         </p>
-        <a class="cta" href="#projects">See My Work</a>
+        <a class="cta button" href="#projects">See My Work</a>
         <hr />
       </div>
     </section>
@@ -73,16 +76,16 @@
         <hr />
         <p>
           Hello and welcome to my portfolio. I'm <strong>Raphael Kamau Kamunyu</strong>, a Computer Science student at Mount Kenya University and a Full-Stack Developer focused on building
-          bridges that help us go beyond solving problems to making our daily lives better and efficient.
+          predictive, reliable, and user-centered web applications.
         </p>
         <p>
-          I specialize in TypeScript-driven full-stack architectures (MERN), integrating Python-based knowledge and machine learning technology to deliver solutions to different fields such as agriculture, hospitality, educationn and entertainment.
+          I specialize in TypeScript-driven full-stack architectures (MERN), integrating Python-based predictive logic and geospatial tools to deliver actionable insights.
           My work spans predictive energy monitoring, interactive mapping for environmental impact, and component-driven developer tooling.
         </p>
         <p>
           I enjoy turning data into clear visual stories and building robust systems that scale. Explore my projects below or download my CV for a detailed overview.
         </p>
-        <p><a href="My_Cv.pdf" download="My_Resume(3).pdf" class="button">Download CV</a></p>
+        <p><a href="My_Resume.pdf" download="kamunyu_raphael_kamauCV.pdf" class="button">Download CV</a></p>
       </div>
     </section>
 
@@ -91,23 +94,23 @@
       <h2>Skills & Technologies</h2>
       <hr />
       <div class="skills-grid">
-        <div class="skill-card">
+        <div class="skill-card skills-category">
           <h3>Languages</h3>
           <p><strong>TypeScript</strong>; JavaScript; Python (Basics); C; SQL</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card skills-category">
           <h3>Frameworks & Libraries</h3>
           <p>React.js; Node.js; Express.js; Leaflet.js; Bootstrap; Tailwind CSS</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card skills-category">
           <h3>Databases</h3>
           <p>MongoDB; MySQL</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card skills-category">
           <h3>Tools & Concepts</h3>
           <p>MERN Stack; Git; GitHub; Render; JWT Authentication; Type-Safe Architectures; AI Foundations; Machine Learning (In Progress)</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card skills-category">
           <h3>Soft Skills</h3>
           <p>Problem Solving; Teamwork; Effective Communication; Adaptability; Continuous Learning</p>
         </div>
@@ -126,8 +129,8 @@
 
       <div class="education-item">
         <h3>Professional Certificate in Full Stack Software Development</h3>
-        <p><strong>Power Learn Project Africa (PLP) Academy</strong> — Remote</p>
-        <p><strong>July 2025 – October 2025</strong></p>
+        <p><strong>Power Learn Project (PLP) Academy</strong> — Remote</p>
+        <p><strong>July 2025 – Nov 2025</strong></p>
       </div>
 
       <div class="education-item">
@@ -184,7 +187,6 @@
 
       <p class="more-projects">Explore more on my <a href="https://github.com/kamunyuraphael" target="_blank" rel="noopener noreferrer">GitHub Profile</a>.</p>
     </section>
-
     <!-- CONTACT -->
     <section id="contact" class="contact">
       <h2>Get In Touch</h2>
@@ -231,36 +233,102 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-      <p>&copy; <span id="year">2026</span> Raphael Kamau Kamunyu. All rights reserved.</p>
+      <div class="footer-content">
+        <p>&copy; <span id="year">2026</span> Raphael Kamau Kamunyu. All rights reserved.</p>
+      </div>
     </footer>
   </main>
 
+  <!-- Embedded scripts: mobile menu toggle, form submit handler, copy-to-clipboard -->
   <script>
     // Set current year dynamically
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Navigation menu
+    // Mobile menu toggle
     (function () {
       const toggle = document.querySelector('.nav-toggle');
       const mobileMenu = document.getElementById('mobile-menu');
-      const navLinks = document.querySelector('.nav-links');
+      const navLinks = document.querySelectorAll('#mobile-menu a');
 
-      if (!toggle || !mobileMenu) return;
+      if (toggle && mobileMenu) {
+        toggle.addEventListener('click', () => {
+          const isOpen = mobileMenu.classList.toggle('mobile-menu--open');
+          toggle.classList.toggle('active', isOpen);
+          toggle.setAttribute('aria-expanded', String(isOpen));
+          mobileMenu.setAttribute('aria-hidden', String(!isOpen));
+        });
 
-      toggle.addEventListener('click', () => {
-        const isOpen = mobileMenu.classList.toggle('mobile-menu--open');
-        toggle.classList.toggle('active', isOpen);
-        toggle.setAttribute('aria-expanded', String(isOpen));
-        mobileMenu.setAttribute('aria-hidden', String(!isOpen));
+        // Close mobile menu when a link is clicked
+        mobileMenu.addEventListener('click', (e) => {
+          if (e.target.tagName === 'A') {
+            mobileMenu.classList.remove('mobile-menu--open');
+            toggle.classList.remove('active');
+            toggle.setAttribute('aria-expanded', 'false');
+            mobileMenu.setAttribute('aria-hidden', 'true');
+          }
+        });
+      }
+    })();
+
+    // Contact form submission with fetch to Formspree and inline feedback
+    (function () {
+      const form = document.getElementById('contact-form');
+      const status = document.getElementById('form-status');
+
+      if (!form) return;
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const action = form.getAttribute('action');
+        if (!action || action.includes('yourFormID')) {
+          status.style.display = 'block';
+          status.style.color = 'var(--color-accent-highlight)';
+          status.textContent = 'Please replace the form action with your Formspree endpoint to enable submissions.';
+          return;
+        }
+
+        const formData = new FormData(form);
+        status.style.display = 'block';
+        status.style.color = 'var(--color-text-light)';
+        status.textContent = 'Sending...';
+
+        try {
+          const res = await fetch(action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (res.ok) {
+            status.style.color = 'var(--color-accent-highlight)';
+            status.textContent = 'Thanks — your message has been sent.';
+            form.reset();
+          } else {
+            const data = await res.json();
+            status.style.color = '#ff6b6b';
+            status.textContent = data?.error || 'Oops — there was a problem sending your message.';
+          }
+        } catch (err) {
+          status.style.color = '#ff6b6b';
+          status.textContent = 'Network error — please try again later.';
+        }
       });
+    })();
 
-      // Close mobile menu when a link is clicked
-      mobileMenu.addEventListener('click', (e) => {
-        if (e.target.tagName === 'A') {
-          mobileMenu.classList.remove('mobile-menu--open');
-          toggle.classList.remove('active');
-          toggle.setAttribute('aria-expanded', 'false');
-          mobileMenu.setAttribute('aria-hidden', 'true');
+    // Copy email to clipboard
+    (function () {
+      const copyBtn = document.getElementById('copy-email');
+      if (!copyBtn) return;
+      copyBtn.addEventListener('click', async () => {
+        const email = 'raphaelkamaukamunyu@gmail.com';
+        try {
+          await navigator.clipboard.writeText(email);
+          copyBtn.textContent = '✅ Copied';
+          setTimeout(() => { copyBtn.textContent = '📋 Copy Email'; }, 2000);
+        } catch (err) {
+          copyBtn.textContent = 'Failed to copy';
+          setTimeout(() => { copyBtn.textContent = '📋 Copy Email'; }, 2000);
         }
       });
     })();
