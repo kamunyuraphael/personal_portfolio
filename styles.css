@@ -196,10 +196,10 @@ hr {
     text-shadow: 0 0 8px rgba(99, 218, 252, 0.4);
 }
 
-/* Keep existing navbar link styles but scoped */
 .navbar {
     /* display: block; */
     background: rgba(7, 17, 29, 0.85); /* Increased opacity for readability */
+    border-radius: 4px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px); /* Safari support */    
 }
