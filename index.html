@@ -17,8 +17,8 @@
           <div class="nav-container">
             <div class="nav-profile">
               <!-- Replace profile.jpg with your image file -->
-              <img src="my_image.jpg" alt="Raphael Kamau profile picture" />
-              <span class="name">Raphael Kamau</span>
+              <img src="my_image.jpg" alt="Raphael profile picture" />
+              <span class="name">Kamunyu Raphael</span>
             </div>
 
             <nav class="nav-links" aria-label="Primary navigation">
@@ -167,7 +167,7 @@
         </p>
         <p><strong>Technologies:</strong> MERN Stack, TypeScript, Express, MongoDB</p>
         <p class="project-links">
-          <a href="https://ui-forge-pihg.vercel.app/" aerial-disabled="true" class="button">Live Demo</a>
+          <a href="https://ui-forge-pihg.vercel.app/" aria-disabled="true" class="button">Live Demo</a>
           <a href="https://github.com/Raphael-Kamau/ui-forge" target="_blank" rel="noopener noreferrer" class="button">GitHub Repo</a>
         </p>
       </article>
@@ -180,7 +180,7 @@
         </p>
         <p><strong>Technologies:</strong> React, Leaflet.js, TypeScript</p>
         <p class="project-links">
-          <a href="https://regen-mapper-2fbn.vercel.app/" aerial-diabled="true" class="button">Live Demo</a>
+          <a href="https://regen-mapper-2fbn.vercel.app/" aria-disabled="true" class="button">Live Demo</a>
           <a href="https://github.com/Raphael-Kamau/regen-mapper" target="_blank" rel="noopener noreferrer" class="button">GitHub Repo</a>
         </p>
       </article>
@@ -198,7 +198,7 @@
           <h3>Send Me a Message</h3>
           <p>Fill out the form below and I’ll get back to you as soon as possible:</p>
   
-          <form action="https://formcarry.com/s/spN0P4LMN6M" method="POST" class="contact-form">
+          <form id="contact-form" action="https://formcarry.com/s/spN0P4LMN6M" method="POST" class="contact-form">
             <!-- Name -->
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -217,6 +217,7 @@
     
             <!-- Submit -->
             <button type="submit" class="button">📨 Send Message</button>
+            <div id="form-status"></div>
           </form>
         </div>
 
@@ -281,10 +282,10 @@
         e.preventDefault();
 
         const action = form.getAttribute('action');
-        if (!action || action.includes('yourFormID')) {
+        if (!action || action.includes('contact-form')) {
           status.style.display = 'block';
           status.style.color = 'var(--color-accent-highlight)';
-          status.textContent = 'Please replace the form action with your Formspree endpoint to enable submissions.';
+          status.textContent = 'Under maintenance';
           return;
         }
 
@@ -302,7 +303,7 @@
 
           if (res.ok) {
             status.style.color = 'var(--color-accent-highlight)';
-            status.textContent = 'Thanks — your message has been sent.';
+            status.textContent = 'Thanks you, your message has been sent,  have a good time.';
             form.reset();
           } else {
             const data = await res.json();
